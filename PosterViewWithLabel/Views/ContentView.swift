@@ -20,7 +20,12 @@ struct ContentView: View {
                 ZStack {
                     PosterView(posterImage: Assets.babyYodaPoster)
                 }
-                .background(.clear)
+                .shadow(
+                    color: .black.opacity(0.9),
+                    radius: 4,
+                    x: 0, 
+                    y: 4
+                )
                 .zIndex(1)
                 
                 Text("Your master I am")
@@ -38,7 +43,9 @@ struct ContentView: View {
             .compositingGroup()
             .shadow(
                 color: .black.opacity(0.9),
-                radius: 8, x: 8, y: 8
+                radius: 8, 
+                x: 8,
+                y: 8
             )
             // scaledToFill on the background image
             // offsets the content for some reason :/
