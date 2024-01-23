@@ -14,6 +14,7 @@ extension Image {
         return posterWidth / 0.666666666666667
     }
     
+    // Possibility to better define the desired size options
     func asPoster() -> some View {
         self
             .resizable()
